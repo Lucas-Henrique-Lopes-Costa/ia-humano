@@ -1,4 +1,6 @@
 import os
+import string
+from collections import Counter
 
 """
 Programa de Identificação de Autoria
@@ -231,80 +233,233 @@ Mas devemos tomar cuidado para não remover o hífen, que faz parte da palavra (
 Bastaria remover as pontuações apenas do início e do fim das palavras.
 """
 
-def leitura_de_textos(caminho_arquivo):
+
+def leitura_de_textos(caminho_pasta):
     """
-    Função que recebe o caminho da pasta, onde possui os arquivos de textos, 
-    e uma outra pasta contida que possui autores conhecidos.
+    Função que recebe o caminho da pasta onde estão os arquivos de texto.
 
-    Lê todos os arquivos separando em autores conhecidos e autores desconhecidos.
-
-    Retorna dois dicionários:
-    - dicionário de autores conhecidos, onde a chave é o nome do autor e o valor é o texto do autor.
-    - dicionário de autores desconhecidos, onde a chave é o nome do arquivo e o valor é o texto do autor.
+    Lê todos os arquivos da pasta especificada e retorna um dicionário:
+    - chave: nome do arquivo (sem extensão)
+    - valor: conteúdo do arquivo
     """
-    autores_conhecidos = {}
-    autores_desconhecidos = {}
+    textos = {}
 
-    pasta_conhecidos = os.path.join(caminho_arquivo, "autores_conhecidos")
-    pasta_desconhecidos = os.path.join(caminho_arquivo, "autores_desconhecidos")
-
-    # Lê autores conhecidos
-    if os.path.exists(pasta_conhecidos):
-        for arquivo in os.listdir(pasta_conhecidos):
-            caminho = os.path.join(pasta_conhecidos, arquivo)
+    if os.path.exists(caminho_pasta):
+        for arquivo in os.listdir(caminho_pasta):
+            caminho = os.path.join(caminho_pasta, arquivo)
             if os.path.isfile(caminho):
                 with open(caminho, "r", encoding="utf-8") as f:
-                    autores_conhecidos[os.path.splitext(arquivo)[0]] = f.read()
+                    textos[os.path.splitext(arquivo)[0]] = f.read()
 
-    # Lê autores desconhecidos
-    if os.path.exists(pasta_desconhecidos):
-        for arquivo in os.listdir(pasta_desconhecidos):
-            caminho = os.path.join(pasta_desconhecidos, arquivo)
-            if os.path.isfile(caminho):
-                with open(caminho, "r", encoding="utf-8") as f:
-                    autores_desconhecidos[os.path.splitext(arquivo)[0]] = f.read()
+    return textos
 
-    return autores_conhecidos, autores_desconhecidos
 
-def extracao_de_metricas():
-    pass
+def extracao_de_palavras(texto):
+    """
+    Recebe um texto em formato de string única e extrai todas as palavras,
+    removendo pontuações do início e do fim.
+    Retorna uma lista de palavras limpas.
+    """
+    pontuacoes = string.punctuation.replace("-", "")
+    palavras = texto.split()
+    palavras_limpa = [
+        palavra.strip(pontuacoes) for palavra in palavras if palavra.strip(pontuacoes)
+    ]
+    return palavras_limpa
 
-def contagem_de_letras():
-    pass
 
-def tamanho_medio_palavras():
-    pass
+def contagem_de_letras(texto):
+    """
+    Deve realizar a contagem de letras de um determinado texto recebendo o texto em formato
+    de uma string única para que assim seja possível extrair quantas letras aquela string contém
+    Retorno: Retorna um número inteiro com a quantidade de letras que aquele texto(string)
+    contém
+    """
+    # Remove pontuações do início e fim das palavras, mas mantém hífen
+    pontuacoes = string.punctuation.replace("-", "")
+    palavras = texto.split()
+    total_letras = 0
+    for palavra in palavras:
+        palavra_limpa = palavra.strip(pontuacoes)
+        total_letras += len(palavra_limpa)
+    return total_letras
 
-def contagem_de_frases():
-    pass
 
-def contagem_de_oracoes():
-    pass
+def tamanho_medio_palavras(texto):
+    """
+    Recebe um texto em formato de string única e calcula o tamanho médio das palavras.
+    Retorna um float com a média do tamanho das palavras.
+    """
+    palavras = extracao_de_palavras(texto)
+    if not palavras:
+        return 0.0
+    total_letras = contagem_de_letras(texto)
+    return total_letras / len(palavras)
 
-def extracao_de_palavras():
-    pass
 
-def contagem_palavras_diferentes():
-    pass
+def contagem_de_frases(texto):
+    """
+    Contabiliza o número de frases em um texto, recebendo o texto como parâmetro
+    e calculando quantas frases aquele texto possui.
+    Retorno: Retorna um número inteiro com a quantidade de frases que aquele texto possui.
+    """
+    delimitadores = [".", "!", "?"]
+    frases = 0
+    for caractere in texto:
+        if caractere in delimitadores:
+            frases += 1
+    return frases if frases > 0 else 1
 
-def med_palavras_por_frase():
-    pass
 
-def gerar_array_proximidade():
-    pass
+def contagem_de_oracoes(texto):
+    """
+    Recebe um texto e conta o número de orações no texto (aproximação usando vírgulas, ponto-e-vírgula, dois-pontos).
+    Retorna um inteiro com o número de orações.
+    """
+    delimitadores = [",", ";", ":"]
+    oracoes = 1  # Começa com 1 para contar a primeira oração
+    for caractere in texto:
+        if caractere in delimitadores:
+            oracoes += 1
+    return oracoes
 
-def identificar_autor_desconhecido():
-    pass
+
+def contagem_palavras_diferentes(texto):
+    """
+    Chama a função "extracao_de_palavras" para obter a lista de palavras do texto.
+    Cria um conjunto (set) a partir da lista de palavras para eliminar duplicatas.
+    Retorna o tamanho do conjunto, que representa o número de palavras diferentes no texto.
+    """
+    palavras = extracao_de_palavras(texto)
+    palavras_diferentes = set(palavras)
+    return len(palavras_diferentes)
+
+
+def med_palavras_por_frase(texto):
+    """
+    Dado um texto, calcula o número médio de palavras por frase.
+    Retorna um float com a média.
+    """
+    total_palavras = len(extracao_de_palavras(texto))
+    total_frases = contagem_de_frases(texto)
+    if total_frases == 0:
+        return 0.0
+    return total_palavras / total_frases
+
+
+def complexidade_media_frases(texto):
+    """
+    Dado um texto, calcula a complexidade média das frases,
+    definida como o número total de orações dividido pelo número total de frases.
+    Retorna um float com a complexidade média.
+    """
+    total_oracoes = contagem_de_oracoes(texto)
+    total_frases = contagem_de_frases(texto)
+    if total_frases == 0:
+        return 0.0
+    return total_oracoes / total_frases
+
+
+def extracao_de_metricas(texto):
+    """
+    Extrai as métricas do texto conforme especificado:
+    1. Tamanho médio das palavras
+    2. Número de palavras diferentes dividido pelo número total de palavras
+    3. Número de palavras usadas exatamente uma vez dividido pelo número total de palavras
+    4. Número médio de palavras por frase
+    5. Complexidade média das frases
+    Retorna uma lista com as métricas na ordem definida.
+    """
+    palavras = extracao_de_palavras(texto)
+    total_palavras = len(palavras)
+    if total_palavras == 0:
+        return [0.0, 0.0, 0.0, 0.0, 0.0]
+
+    # 1. Tamanho médio das palavras
+    tamanho_medio = tamanho_medio_palavras(texto)
+
+    # 2. Número de palavras diferentes dividido pelo número total de palavras
+    palavras_diferentes = len(set(palavras))
+    proporcao_diferentes = palavras_diferentes / total_palavras
+
+    # 3. Número de palavras usadas exatamente uma vez dividido pelo número total de palavras
+    contagem = Counter(palavras)
+    palavras_unicas = sum(1 for v in contagem.values() if v == 1)
+    proporcao_unicas = palavras_unicas / total_palavras
+
+    # 4. Número médio de palavras por frase
+    media_palavras_frase = med_palavras_por_frase(texto)
+
+    # 5. Complexidade média das frases
+    complexidade = complexidade_media_frases(texto)
+
+    return [
+        tamanho_medio,
+        proporcao_diferentes,
+        proporcao_unicas,
+        media_palavras_frase,
+        complexidade,
+    ]
+
+
+def gerar_array_proximidade(autores_conhecidos, autor_desconhecido):
+    """
+    Receber dois dicionários contendo autores e textos conhecidos e desconhecidos.
+    Cada dicionário tem como chave o nome do autor e como valor o texto escrito por ele.
+    Deve calcular a impressão digital através de extrair métricas de cada autor conhecido e do autor desconhecido.
+    Deve retornar um dicionário onde a chave é o nome do texto e o um conjunto de dados de metricas
+    para cada um dos textos.
+    """
+    metricas_conhecidos = {
+        autor: extracao_de_metricas(texto)
+        for autor, texto in autores_conhecidos.items()
+    }
+    metricas_desconhecidos = {
+        autor: extracao_de_metricas(texto)
+        for autor, texto in autor_desconhecido.items()
+    }
+    return {"conhecidos": metricas_conhecidos, "desconhecidos": metricas_desconhecidos}
+
+
+def identificar_autor_desconhecido(metricas_conhecidos, metrica_desconhecido):
+    """
+    Recebe um dicionário contendo autores e textos conhecidos e desconhecidos.
+    Identifica o autor mais provável de um texto desconhecido.
+    Para isso compara a impressão digital do autor desconhecido com a dos autores conhecidos.
+    Retorna o nome do autor conhecido cuja impressão digital for mais próxima.
+    """
+    pesos = [11, 33, 50, 0.4, 4]
+    menor_score = float("inf")
+    autor_mais_provavel = None
+
+    for autor, metrica_conhecido in metricas_conhecidos.items():
+        score = sum(
+            abs(metrica_conhecido[i] - metrica_desconhecido[i]) * pesos[i]
+            for i in range(5)
+        )
+        if score < menor_score:
+            menor_score = score
+            autor_mais_provavel = autor
+
+    return autor_mais_provavel
+
 
 def main():
-    caminho_arquivo = "dados"
-    autores_conhecidos, autores_desconhecidos = leitura_de_textos(caminho_arquivo)
+    autores_conhecidos = {}
+    autores_desconhecidos = {}
+    autores_desconhecidos = leitura_de_textos("../dados")
+    autores_conhecidos = leitura_de_textos("../dados/autores_conhecidos")
 
-    # Exemplo de uso
-    print("Autores Conhecidos:")
-    for autor, texto in autores_conhecidos.items():
-        print(f"{autor}: {len(texto)} caracteres")
+    metricas = gerar_array_proximidade(autores_conhecidos, autores_desconhecidos)
+    for autor_desconhecido, metrica_desconhecido in metricas["desconhecidos"].items():
+        autor_mais_provavel = identificar_autor_desconhecido(
+            metricas["conhecidos"], metrica_desconhecido
+        )
+        print(
+            f"O autor mais provável de '{autor_desconhecido}' é: {autor_mais_provavel}"
+        )
 
-    print("\nAutores Desconhecidos:")
-    for arquivo, texto in autores_desconhecidos.items():
-        print(f"{arquivo}: {len(texto)} caracteres")
+
+if __name__ == "__main__":
+    main()
+
