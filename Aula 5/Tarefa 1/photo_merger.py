@@ -265,7 +265,16 @@ if __name__ == "__main__":
     print(f"\n❓ Deseja prosseguir com a cópia real?")
     print(f"   Serão copiados {stats['final_count']} arquivos únicos")
 
-    # Para este exemplo, vamos prosseguir automaticamente
-    print("\n🔄 EXECUTANDO CÓPIA REAL")
-    print("-" * 30)
-    final_stats = merge_photos(source_dirs, destination_dir, dry_run=False)
+    resposta = (
+        input(
+            "\nDigite 's' para continuar e executar a cópia real, ou qualquer outra tecla para cancelar: "
+        )
+        .strip()
+        .lower()
+    )
+    if resposta == "s":
+        print("\n🔄 EXECUTANDO CÓPIA REAL")
+        print("-" * 30)
+        final_stats = merge_photos(source_dirs, destination_dir, dry_run=False)
+    else:
+        print("\n❌ Operação cancelada pelo usuário. Nenhum arquivo foi copiado.")
