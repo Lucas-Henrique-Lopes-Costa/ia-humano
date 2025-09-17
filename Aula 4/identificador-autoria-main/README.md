@@ -7,4 +7,3 @@ A aula se baseia no Capítulo 11 do livro _Porter, L., Zingaro, D., Simon, 
 
 Os slides da aula. com as **instruções do exercício**, estão disponíveis [aqui](https://ufla-pasia.github.io/pasia-slides/aula_p4.html).
 
-
