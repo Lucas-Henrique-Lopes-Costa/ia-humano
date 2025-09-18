@@ -1,4 +1,4 @@
-NOTÍCIAS EXTRAÍDAS - 17/09/2025 17:58:09
+NOTÍCIAS EXTRAÍDAS - 17/09/2025 18:31:42
 ================================================================================
 
  1. [G1] Veja como votaram os deputados na mudança de texto da PEC da Blindagem
@@ -7,20 +7,20 @@ NOTÍCIAS EXTRAÍDAS - 17/09/2025 17:58:09
  2. [G1] Presidente do Senado se queixa de foco da oposição em 'debates do Judiciário'
     URL: https://g1.globo.com/politica/noticia/2025/09/17/alcolumbre-se-queixa-de-oposicao-se-atendo-a-debates-do-judiciario-esta-impossivel.ghtml
 
- 3. [G1] Laudo de Bolsonaro aponta câncer de pele; lesões já foram retiradas
-    URL: https://g1.globo.com/politica/noticia/2025/09/17/laudo-de-bolsonaro-aponta-cancer-mas-lesoes-foram-retiradas-e-nao-ha-necessidade-de-tratamento-adicional-diz-medico.ghtml
-
- 4. [G1] Venezuela inicia exercícios militares em meio a tensões com os EUA
-    URL: https://g1.globo.com/mundo/noticia/2025/09/17/venezuela-inicia-exercicios-militares-caribe-tensoes-eua.ghtml
-
- 5. [G1] Banco Central dos EUA reduz juros pela 1ª vez em 9 meses
-    URL: https://g1.globo.com/economia/noticia/2025/09/17/fed-juros-eua-setembro.ghtml
-
- 6. [G1] Ibovespa tem novo recorde com Superquarta; dólar fecha a R$ 5,30
+ 3. [G1] Ibovespa tem novo recorde com Superquarta; dólar fecha a R$ 5,30
     URL: https://g1.globo.com/economia/noticia/2025/09/17/dolar-ibovespa.ghtml
 
- 7. [G1] Câmara aprova MP que garante ampliação da tarifa social na conta de luz
-    URL: https://g1.globo.com/economia/noticia/2025/09/17/camara-aprova-mp-que-garante-ampliacao-da-tarifa-social-na-conta-de-luz-para-familias-do-cadunico.ghtml
+ 4. [G1] Lula envia ao Congresso projeto de regulação econômica das big techs
+    URL: https://g1.globo.com/politica/noticia/2025/09/17/lula-envia-ao-congresso-nacional-projeto-de-regulacao-economica-das-big-techs.ghtml
+
+ 5. [G1] Lula sanciona lei que combate 'adultização' de crianças na internet
+    URL: https://g1.globo.com/politica/noticia/2025/09/17/lula-sanciona-lei-que-combate-adultizacao-de-criancas-na-internet-e-cria-regras-para-empresas-nas-redes-sociais.ghtml
+
+ 6. [G1] Laudo de Bolsonaro aponta câncer de pele; lesões já foram retiradas
+    URL: https://g1.globo.com/politica/noticia/2025/09/17/laudo-de-bolsonaro-aponta-cancer-mas-lesoes-foram-retiradas-e-nao-ha-necessidade-de-tratamento-adicional-diz-medico.ghtml
+
+ 7. [G1] Venezuela inicia exercícios militares em meio a tensões com os EUA
+    URL: https://g1.globo.com/mundo/noticia/2025/09/17/venezuela-inicia-exercicios-militares-caribe-tensoes-eua.ghtml
 
  8. [G1] Quer receber as últimas notícias no seu WhatsApp? Siga o canal do g1
     URL: https://whatsapp.com/channel/0029Va2ll12AInPbyd8p933r
@@ -31,35 +31,35 @@ NOTÍCIAS EXTRAÍDAS - 17/09/2025 17:58:09
 10. [G1] Câmara blindou grupos de extermínio e casos de corrupção entre 1998 e 2001
     URL: https://g1.globo.com/politica/noticia/2025/09/17/blindagem-de-deputados-travou-253-pedidos-de-processo-entre-1998-e-2001-relembre-casos.ghtml
 
-11. [G1] Proposta tem que ser enterrada, diz presidente da CCJ do Senado
+11. [G1] Alcolumbre critica Eduardo Bolsonaro: Nos EUA 'xingando o Brasil'
+    URL: https://g1.globo.com/politica/noticia/2025/09/17/alcolumbre-critica-eduardo-bolsonaro-nos-eua-xingando-meu-pais.ghtml
+
+12. [G1] Proposta tem que ser enterrada, diz presidente da CCJ do Senado
     URL: https://g1.globo.com/politica/noticia/2025/09/17/pec-da-blindagem-presidente-da-ccj-do-senado-diz-que-proposta-e-desrespeito-com-eleitor-e-que-texto-tem-que-ser-enterrado.ghtml
 
-12. [G1] Ex-presidente tem alta e volta hoje para prisão domiciliar
+13. [G1] Banco Central dos EUA reduz juros pela 1ª vez em 9 meses
+    URL: https://g1.globo.com/economia/noticia/2025/09/17/fed-juros-eua-setembro.ghtml
+
+14. [G1] Presidente assina MP que desonera tributos de data centers
+    URL: https://g1.globo.com/politica/noticia/2025/09/17/lula-assina-mp-que-desonera-data-centers-de-tributos-para-atrair-industria-de-processamento-de-dados.ghtml
+
+15. [G1] Ex-presidente tem alta e volta hoje para prisão domiciliar
     URL: https://g1.globo.com/politica/noticia/2025/09/17/boletim-medico-bolsonaro.ghtml
 
-13. [G1] Câncer de pele é o mais comum no Brasil; saiba como se prevenir
+16. [G1] Câncer de pele é o mais comum no Brasil; saiba como se prevenir
     URL: https://g1.globo.com/saude/noticia/2025/09/17/cancer-de-pele-e-o-mais-comum-no-brasil-entenda-sintomas-tipos-e-formas-de-prevencao.ghtml
 
-14. [G1] Redação
+17. [G1] Redação
     URL: https://g1.globo.com/bom-dia-brasil/noticia/equipe-bom-dia-brasil.ghtml
 
-15. [G1] História
+18. [G1] História
     URL: https://g1.globo.com/bom-dia-brasil/noticia/conheca-a-historia-do-bom-dia-brasil-desde-a-estreia.ghtml
 
-16. [G1] redação
+19. [G1] redação
     URL: https://g1.globo.com/globo-reporter/noticia/2018/08/07/redacao-globo-reporter.ghtml
 
-17. [G1] história
+20. [G1] história
     URL: https://g1.globo.com/globo-reporter/noticia/2010/04/conheca-historia-do-globo-reporter.html
-
-18. [G1] redação
-    URL: https://g1.globo.com/jornal-da-globo/noticia/equipe-do-jornal-da-globo.ghtml
-
-19. [G1] redação
-    URL: https://g1.globo.com/jornal-nacional/noticia/2018/08/01/redacao.ghtml
-
-20. [G1] equipe
-    URL: https://g1.globo.com/profissao-reporter/noticia/nossa-equipe.ghtml
 
 21. [UOL] Ingresso.com
     URL: https://www.ingresso.com/?partnership=home&utm_source=uol.com.br&utm_medium=barrauol&utm_campaign=linkfixo_barrauol&utm_content=barrauol-link-ingressocom&utm_term=barrauol-ingressocom
@@ -124,11 +124,11 @@ NOTÍCIAS EXTRAÍDAS - 17/09/2025 17:58:09
 41. [Folha de S.Paulo] Autor de 'A Geração Ansiosa' é o 1º convidado de novo podcast da Folha sobre tecnologia na escolaEpisódio inaugural do Folha na Escola traz conversa com Jonathan Haidt nesta quarta
     URL: https://www1.folha.uol.com.br/podcasts/2025/09/novo-podcast-debate-uso-da-tecnologia-na-educacao-e-na-vida-de-criancas-e-adolescentes.shtml
 
-42. [Folha de S.Paulo] Motta e centrão revertem derrota e recolocam voto secreto para decidir quais políticos são processados
-    URL: https://www1.folha.uol.com.br/poder/2025/09/centrao-prepara-manobra-para-ressuscitar-votacao-secreta-prevista-em-pec-da-blindagem.shtml
-
-43. [Folha de S.Paulo] Após blindagem na Câmara, STF analisa medidas para dificultar o impeachment de ministros
+42. [Folha de S.Paulo] Após PEC da blindagem, STF analisa medidas para dificultar que ministros sofram impeachment
     URL: https://www1.folha.uol.com.br/colunas/monicabergamo/2025/09/stf-analisa-acoes-que-podem-dificultar-impeachment-de-ministros.shtml
+
+43. [Folha de S.Paulo] Motta e centrão manobram e recolocam votação secreta para decidir quem será processado
+    URL: https://www1.folha.uol.com.br/poder/2025/09/centrao-prepara-manobra-para-ressuscitar-votacao-secreta-prevista-em-pec-da-blindagem.shtml
 
 44. [Folha de S.Paulo] Operação da PF prende um dos diretores da Agência Nacional de Mineração e um ex-diretor da PF
     URL: https://www1.folha.uol.com.br/cotidiano/2025/09/policia-federal-faz-operacao-contra-corrupcao-no-setor-de-mineracao-em-mg.shtml
@@ -157,11 +157,11 @@ NOTÍCIAS EXTRAÍDAS - 17/09/2025 17:58:09
 52. [Folha de S.Paulo] Clube Folha Gourmet: descontos que pagam o valor da sua assinatura!
     URL: https://clubefolhagourmet.folha.com.br/?utm_source=folha_site&utm_medium=folha_site_elemento_global&utm_campaign=clube_folha_gourmet&utm_term=420804
 
-53. [Folha de S.Paulo] Por que 1 em 6 pais americanos dizem não vacinar seus filhos
-    URL: https://www1.folha.uol.com.br/equilibrioesaude/2025/09/por-que-1-em-6-pais-americanos-dizem-que-pularam-ou-adiaram-as-vacinas-de-seus-filhos.shtml
+53. [Folha de S.Paulo] Nascidos entre 1939 e 2000 têm chances mínimas de chegar aos 100 anos, conclui novo estudo
+    URL: https://www1.folha.uol.com.br/equilibrioesaude/2025/09/nascidos-entre-1939-e-2000-tem-poucas-chances-de-chegar-aos-100-anos-aponta-estudo.shtml
 
-54. [Folha de S.Paulo] Indústria solar americana cresce apesar dos ataques do governo Trump contra energia renovável
-    URL: https://www1.folha.uol.com.br/mercado/2025/09/apesar-da-resistencia-de-trump-a-industria-solar-americana-esta-crescendo.shtml
+54. [Folha de S.Paulo] Cursinho promove simulado presencial gratuito da Fuvest no sábado; veja como participar
+    URL: https://www1.folha.uol.com.br/educacao/2025/09/cursinho-promove-simulado-presencial-gratuito-da-fuvest-em-20-de-setembro.shtml
 
 55. [Folha de S.Paulo] Autora espanhola Rosa Montero terá curso sobre escrita criativa na CasaFolha; saiba como será
     URL: https://www1.folha.uol.com.br/poder/2025/08/autora-espanhola-rosa-montero-tera-curso-exclusivo-de-escrita-criativa-na-casafolha.shtml
@@ -172,8 +172,8 @@ NOTÍCIAS EXTRAÍDAS - 17/09/2025 17:58:09
 57. [Folha de S.Paulo] Câmara aprova a MP da tarifa social no último dia do prazo, e texto seguirá para o SenadoPrograma reduz custo da conta de luz de famílias em situação de vulnerabilidade
     URL: https://www1.folha.uol.com.br/mercado/2025/09/camara-aprova-mp-da-tarifa-social-no-ultimo-dia-do-prazo-e-texto-vai-para-o-senado.shtml
 
-58. [Folha de S.Paulo] Economia da Argentina fica parada ante 1º trimestre, mas cresce na comparação anualPIB cai -0,1% em relação aos três meses anteriores; queda de exportações preocupa
-    URL: https://www1.folha.uol.com.br/mercado/2025/09/economia-da-argentina-fica-estagnada-ante-o-1o-tri-mas-cresce-na-comparacao-anual.shtml
+58. [Folha de S.Paulo] Secretário do Tesouro dos EUA fez acordo similar ao de diretora do Fed atacada por TrumpPresidente americano tenta demitir Lisa Cook sob acusação de fraude hipotecária
+    URL: https://www1.folha.uol.com.br/mercado/2025/09/secretario-do-tesouro-de-trump-fez-promessas-contraditorias-em-hipoteca-diz-agencia.shtml
 
 59. [Folha de S.Paulo] Italiana Fiat confirma que vai lançar cinco automóveis novos no Brasil, de 2026 até 2030
     URL: https://www1.folha.uol.com.br/mercado/2025/09/fiat-vai-lancar-cinco-carros-novos-no-brasil-entre-2026-e-2030.shtml

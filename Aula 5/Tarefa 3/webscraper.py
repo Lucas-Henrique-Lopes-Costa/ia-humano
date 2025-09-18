@@ -18,9 +18,6 @@ class NewsScraper:
     def __init__(self, delay: float = 1.0):
         """
         Inicializa o scraper.
-
-        Args:
-            delay: Tempo de espera entre requisições (em segundos)
         """
         self.delay = delay
         self.session = requests.Session()
@@ -34,12 +31,6 @@ class NewsScraper:
     def fetch_page(self, url: str) -> Optional[BeautifulSoup]:
         """
         Faz o download de uma página e retorna um objeto BeautifulSoup.
-
-        Args:
-            url: URL da página a ser baixada
-
-        Returns:
-            Objeto BeautifulSoup ou None em caso de erro
         """
         try:
             logger.info(f"Fazendo requisição para: {url}")
@@ -58,9 +49,6 @@ class NewsScraper:
     def extract_news_from_g1(self) -> List[Dict[str, str]]:
         """
         Extrai notícias do site G1.
-
-        Returns:
-            Lista de dicionários com título e URL das notícias
         """
         url = "https://g1.globo.com/"
         soup = self.fetch_page(url)
@@ -104,9 +92,6 @@ class NewsScraper:
     def extract_news_from_uol(self) -> List[Dict[str, str]]:
         """
         Extrai notícias do site UOL.
-
-        Returns:
-            Lista de dicionários com título e URL das notícias
         """
         url = "https://www.uol.com.br/"
         soup = self.fetch_page(url)
@@ -150,9 +135,6 @@ class NewsScraper:
     def extract_news_from_folha(self) -> List[Dict[str, str]]:
         """
         Extrai notícias do site Folha de S.Paulo.
-
-        Returns:
-            Lista de dicionários com título e URL das notícias
         """
         url = "https://www1.folha.uol.com.br/"
         soup = self.fetch_page(url)
@@ -198,9 +180,6 @@ class NewsScraper:
     def get_all_news(self) -> List[Dict[str, str]]:
         """
         Extrai notícias de todos os sites configurados.
-
-        Returns:
-            Lista consolidada de todas as notícias
         """
         all_news = []
 
@@ -227,9 +206,6 @@ class NewsScraper:
     def display_news(self, news: List[Dict[str, str]]) -> None:
         """
         Exibe as notícias de forma organizada.
-
-        Args:
-            news: Lista de notícias para exibir
         """
         if not news:
             print("❌ Nenhuma notícia encontrada.")
@@ -239,10 +215,6 @@ class NewsScraper:
         print(f"📰 NOTÍCIAS MAIS RECENTES ({len(news)} encontradas)")
         print("=" * 80)
 
-        for i, item in enumerate(news, 1):
-            print(f"\n{i:2d}. [{item['fonte']}] {item['titulo']}")
-            print(f"    🔗 {item['url']}")
-
         print("\n" + "=" * 80)
 
     def save_to_file(
@@ -250,10 +222,6 @@ class NewsScraper:
     ) -> None:
         """
         Salva as notícias em um arquivo de texto.
-
-        Args:
-            news: Lista de notícias para salvar
-            filename: Nome do arquivo
         """
         try:
             with open(filename, "w", encoding="utf-8") as f:
