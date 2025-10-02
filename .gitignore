@@ -1,3 +1,5 @@
-credentials.json
 .env
-*.pickle
+
+# Arquivos de autenticação Google
+token.pickle
+credentials.json
